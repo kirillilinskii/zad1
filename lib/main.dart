@@ -173,7 +173,11 @@ class ContinueButton extends StatelessWidget {
         width: 300,
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.orange,
+            gradient: LinearGradient(
+            colors: [Color(0xFFecbb7a), Colors.orange],
+            begin: FractionalOffset.center,
+            end: FractionalOffset.bottomCenter,
+          ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
         child: Center(
